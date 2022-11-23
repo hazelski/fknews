@@ -1,0 +1,19 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: fknews
+  datasource:
+    url: jdbc:postgresql://localhost:5432/fknews
+    username: postgres
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+  jackson:
+    default-property-inclusion: NON_NULL
+    deserialization:
+      fail-on-unknown-properties: true
+    date-format: yyyy-MM-dd
